@@ -17,10 +17,10 @@ let alertReturn = alert('Welcome ' + userName);
 alert ('Please answer all qustions yes or no');
 
 let questionOne = prompt('Is my name Spenser?');
-let lowercaseQuestionOne = 'yes' || questionOne.toLowerCase();
+let lowercaseQuestionOne = questionOne.toLowerCase();
 console.log('original response ' + questionOne + ' lowercase response ' + lowercaseQuestionOne);
 
-if (lowercaseQuestionOne === 'yes' || lowercaseQusetionOne === 'y') {
+if (lowercaseQuestionOne === 'yes' || lowercaseQuestionOne === 'y') {
   alert('That is correct');
 } else if (lowercaseQuestionOne === 'no' || lowercaseQuestionOne === 'n') {
   alert ('That is incorrect');
@@ -29,19 +29,19 @@ if (lowercaseQuestionOne === 'yes' || lowercaseQusetionOne === 'y') {
 }
 
 let questionTwo = prompt('Am I 32 years old?');
-let lowercaseQuestionTwo = 'yes' || questionTwo.toLowerCase();
+let lowercaseQuestionTwo = questionTwo.toLowerCase();
 console.log('original response ' + questionTwo + ' lowercase response ' + lowercaseQuestionTwo);
 
 if (lowercaseQuestionTwo === 'yes' || lowercaseQuestionTwo === 'y') {
   alert('That is correct.');
-} else if (lowercaseQuestionTwo === "no" || lowercaseQuestionTwo === 'n') {
+} else if (lowercaseQuestionTwo === 'no' || lowercaseQuestionTwo === 'n') {
   alert ('That is incorrect.');
 } else {
   alert('I am confused by your response, therefore, I am confused by your tactics.');
 }
 
 let marine = prompt('Was I in the Marines?');
-let lowercaseMarine = 'yes' || lowercaseMarine.toLowerCase();
+let lowercaseMarine = marine.toLowerCase();
 console.log('original response ' + marine + ' lowercase response ' + lowercaseMarine);
 
 if (lowercaseMarine === 'yes' || lowercaseMarine === 'y') {
@@ -53,7 +53,7 @@ if (lowercaseMarine === 'yes' || lowercaseMarine === 'y') {
 }
 
 let years = prompt('Was I in the Marines for 12 years?');
-let lowercaseYears = 'yes' || years.toLowerCase();
+let lowercaseYears = years.toLowerCase();
 console.log('original response ' + years + ' lowercase response ' + lowercaseYears);
 
 if (lowercaseYears === 'yes' || lowercaseYears === 'y') {
@@ -67,7 +67,7 @@ if (lowercaseYears === 'yes' || lowercaseYears === 'y') {
 alert('Alright, last question!')
 
 let questionLocation = prompt('Do I live in Washington State?')
-let lowercaseQuestionLocation = 'yes' || questionLocation.toLowerCase();
+let lowercaseQuestionLocation = questionLocation.toLowerCase();
 console.log('originial response ' + questionLocation + ' lowercase response ' + lowercaseQuestionLocation);
 
 if (lowercaseQuestionLocation === 'yes' || lowercaseQuestionLocation === 'y') {
