@@ -1,6 +1,6 @@
 'use strict';
 
-proof of life
+//proof of life
 console.log('Yut-Yut');
 let guessScore = 0
 
@@ -18,6 +18,7 @@ function getUserName(){
 
  alert ('Please answer the following qustions yes or no');
 
+ function firstQuestion() {
  let questionOne = prompt('Is my name Spenser?');
  let lowercaseQuestionOne = questionOne.toLowerCase();
  console.log('original response ' + questionOne + ' lowercase response ' + lowercaseQuestionOne);
@@ -30,7 +31,11 @@ function getUserName(){
  } else {
    alert('I am confused by your response');
  }
+return firstQuestion;
+}
+firstQuestion();
 
+function secondQuestion() {
  let questionTwo = prompt('Am I 32 years old?');
  let lowercaseQuestionTwo = questionTwo.toLowerCase();
  console.log('original response ' + questionTwo + ' lowercase response ' + lowercaseQuestionTwo);
@@ -43,7 +48,11 @@ function getUserName(){
  } else {
    alert('I am confused by your response, therefore, I am confused by your tactics.');
  }
+ return secondQuestion;
+}
+secondQuestion();
 
+function thirdQuestion() {
  let marine = prompt('Was I in the Marines?');
  let lowercaseMarine = marine.toLowerCase();
  console.log('original response ' + marine + ' lowercase response ' + lowercaseMarine);
@@ -56,7 +65,11 @@ function getUserName(){
  } else {
    alert('Remember all questions must be answered with either yes or no!');
  }
+ return thirdQuestion;
+}
+thirdQuestion();
 
+function fourthQuestion() {
  let years = prompt('Was I in the Marines for 12 years?');
  let lowercaseYears = years.toLowerCase();
  console.log('original response ' + years + ' lowercase response ' + lowercaseYears);
@@ -69,9 +82,13 @@ function getUserName(){
  } else {
    alert('I am confused by your response. I am confused by your tactics, all your base are belong to us!');
  }
+ return fourthQuestion;
+}
+fourthQuestion();
  
  alert('Alright, last yes or no question.')
  
+ function fifthQuestion() {
  let questionLocation = prompt('Do I live in Washington State?')
  let lowercaseQuestionLocation = questionLocation.toLowerCase();
  console.log('originial response ' + questionLocation + ' lowercase response ' + lowercaseQuestionLocation);
@@ -84,9 +101,12 @@ function getUserName(){
   } else {
     alert('Hmmm, maybe try again by refreshing this page and remember to answer wil only yes or no.')
   }
+ return fifthQuestion;
+}
+fifthQuestion();
 
   alert('This next one is not a yes or no');
-
+function sixthQuestion() {
   let movies = ['die hard', 'boondock saints', 'the boondock saints', 'the departed', 'departed'];
     console.log ('This is my array ' + movies)
   let guesscount = 6;
@@ -114,6 +134,9 @@ function getUserName(){
     guesscount--;
     console.log('This is user attempt' + (6 - guesscount))
   }
+  return sixthQuestion;
+}
+sixthQuestion();
 
   
   alert(userName + ' wow, you got it right! My name is Spenser, I am 32 years old. I spent 12 years in the Marines and I curently live in WA! My favorite movies are Die Hard, The Boondock Saints and The Departed. Great job. Now if you want to know more about me read on, my friend! You answered ' + guessScore + ' questions correctly!');
