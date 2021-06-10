@@ -123,13 +123,13 @@ function sixthQuestion() {
       break;
       }
     }
-    if (correct === false && userguess > 1){
+    if (correct === false && guesscount > 1){
       alert('Sorry, wrong answer.');
-      if (userguess === false && guesscount == 1){
-        alert('You did not guess correct! The correct answers were Die Hard, The Boondock Saints, and The Departed.');
-        correct = true;
-        break;
-      }
+    }
+    if (correct === false && guesscount == 0){
+      alert('You did not guess correct! The correct answers were Die Hard, The Boondock Saints, and The Departed.');
+      correct = true;
+      break;
     }
     guesscount--;
     console.log('This is user attempt' + (6 - guesscount))
@@ -138,6 +138,38 @@ function sixthQuestion() {
 }
 sixthQuestion();
 
+alert("Can you guess the number?");
+
+numberguessing game
+function questionseven(){
+  let correctAnswer = 56;
+  console.log(correctAnswer)
+  let userAttempts = 4;
+  for(let i = 0; i < userAttempts; i++){
+    let userGuess = prompt('Guess my number.');
+    while(userGuess < 1 || userGuess > 100){
+      userGuess = prompt('Wrong range. Please enter a number 1 -100');
+    }
+    if (userGuess == correctAnswer) {
+      alert('You got it. Good guess!');
+      guessScore++
+      break;
+    } else if(userGuess < correctAnswer){
+      alert('To low, try again.');
+    } else if (userGuess > correctAnswer){
+      alert('To high, try again.');
+    } else {
+      alert('Something else went wrong, try again.')
+    }
+    console.log(i);
+    if (i == userAttempts -1){
+      alert('You did not guess correctly. Correct Answer is: ' + correctAnswer);
+    }
+  }
+  return questionseven;
+}
+
+questionseven();
   
-  alert(userName + ' wow, you got it right! My name is Spenser, I am 32 years old. I spent 12 years in the Marines and I curently live in WA! My favorite movies are Die Hard, The Boondock Saints and The Departed. Great job. Now if you want to know more about me read on, my friend! You answered ' + guessScore + ' questions correctly!');
+  alert(userName + ' wow, you got it right! My name is Spenser, I am 32 years old. I spent 12 years in the Marines and I curently live in WA! My favorite movies are Die Hard, The Boondock Saints, and The Departed. Lastly, the correct number was 56 Great job. Now if you want to know more about me read on, my friend! You answered ' + guessScore + ' questions correctly!');
 
