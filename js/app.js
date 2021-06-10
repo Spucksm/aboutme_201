@@ -140,7 +140,7 @@ sixthQuestion();
 
 alert("Can you guess the number?");
 
-numberguessing game
+// numberguessing game
 function questionseven(){
   let correctAnswer = 56;
   console.log(correctAnswer)
