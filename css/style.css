@@ -1,0 +1,33 @@
+body {background: grey;
+text-align: center}
+header {border: solid;
+border-radius: 20px;
+padding: 50px;
+}
+div.a {
+  text-align: center;
+}
+div.b {
+  text-align: left;
+}
+div.c {
+  text-align: left;
+}
+div.d {
+  text-align: left;
+}
+div.e {
+  text-align: left;
+}
+div.f {
+  text-align: left;
+}
+div.g {
+  text-align: left;
+}
+img {
+  border-radius: 8px;
+  max-width: 25%;
+  height: auto;
+  object-fit: contain;
+}

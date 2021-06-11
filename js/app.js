@@ -140,9 +140,10 @@ sixthQuestion();
 
 alert("Can you guess the number?");
 
-// numberguessing game
+// numberguessing game;
+
 function questionseven(){
-  let correctAnswer = 56;
+  let correctAnswer = Math.floor(Math.random() * 100) + 1;
   console.log(correctAnswer)
   let userAttempts = 4;
   for(let i = 0; i < userAttempts; i++){
@@ -171,5 +172,5 @@ function questionseven(){
 
 questionseven();
   
-  alert(userName + ' wow, you got it right! My name is Spenser, I am 32 years old. I spent 12 years in the Marines and I curently live in WA! My favorite movies are Die Hard, The Boondock Saints, and The Departed. Lastly, the correct number was 56 Great job. Now if you want to know more about me read on, my friend! You answered ' + guessScore + ' questions correctly!');
+  alert(userName + ' wow, you got it right! My name is Spenser, I am 32 years old. I spent 12 years in the Marines and I curently live in WA! My favorite movies are Die Hard, The Boondock Saints, and The Departed. Lastly, the correct number was' +correctAnswer + 'Great job. Now if you want to know more about me read on, my friend! You answered ' + guessScore + ' questions correctly!');
 
