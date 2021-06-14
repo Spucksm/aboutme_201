@@ -6,7 +6,9 @@ let guessScore = 0
 
 let userName = prompt('Welcome to all about me. What is it you call yourself?');
  console.log('The users name is ' + userName);
- if (userName != null);
+ if (userName ===null || userName === '') {
+      userName = prompt('I didn\'t undersand, I would like to now what it is you call yourself.')
+}
 
 function getUserName(){
   

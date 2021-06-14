@@ -1,8 +1,24 @@
 body {background: grey;
 text-align: center}
-header {border: solid;
+header {border: 20px solid;
 border-radius: 20px;
 padding: 50px;
+margin: 20px;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+main {
+  margin: 20px;
+}
+p {
+  line-height: 1.8em;
+}
+div {
+  line-height: 1.3em;
 }
 div.a {
   text-align: center;
@@ -22,12 +38,37 @@ div.e {
 div.f {
   text-align: left;
 }
+.deployment {
+  border: 20px solid;
+  border-radius: 20px;
+  margin: 30px auto;
+}
+
+.pic1 {
+  width: 900px;
+  margin: auto;
+}
+
 div.g {
   text-align: left;
 }
-img {
+
+div.pics {
   border-radius: 8px;
-  max-width: 25%;
-  height: auto;
   object-fit: contain;
+  display: inline;
+  margin: 70px auto;
+}
+
+.pic2 {
+  height: 250px;
+  width: 200px;
+  border: 3px solid;
+  margin: 20px 50px;
+}
+ul {
+  list-style-type: square;
+}
+ol {
+  list-style-position: outside;
 }
